@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>KriShop</title>
-  <link rel="stylesheet" href="Krishop.css" />
+  <link rel="stylesheet" href="KriShop.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 <body>
@@ -20,9 +20,12 @@
         <i class="fas fa-search"></i>
       </div>
       <div class="nav-icons">
-        <div><i class="fas fa-user"></i><span>Login</span></div>
-        
-        <div><i class="fas fa-headset"></i><span>Contact</span></div>
+        <div onclick="goToLogin()" style="cursor: pointer;">
+          <i class="fas fa-user"></i><span>Login</span>
+        </div>
+        <div onclick="goToContact()" style="cursor: pointer;">
+          <i class="fas fa-headset"></i><span>Contact</span>
+        </div>
       </div>
     </div>
 
@@ -38,58 +41,72 @@
     <div class="product-grid">
       <div class="product-card">
         <img src="fertilizer.jpg" alt="Fertilizer">
-        <h3>Nitrogenous Fertilizers/<br>
-                 নাইট্রোজেন সার </h3>
-        <p>450.00 BDT/ha</p>
-        <button>BUY NOW</button>
+        <h3>Nitrogenous Fertilizers/<br>নাইট্রোজেন সার</h3>
+        <p>450.00 BDT</p>
+        <button onclick="buyNow('Nitrogenous Fertilizers', 450)">BUY NOW</button>
       </div>
       <div class="product-card">
         <img src="paddy.jpg" alt="Paddy">
-        <h3>Aman(BRRI 44)/<br>আমন
-            (ব্রি ধান৪৪)</h3>
-        <p>1300.00 BDT/ha</p>
-        <button>BUY NOW</button>
+        <h3>Aman (BRRI 44)/<br>আমন (ব্রি ধান৪৪)</h3>
+        <p>1300.00 BDT</p>
+        <button onclick="buyNow('Aman (BRRI 44)', 1300)">BUY NOW</button>
       </div>
       <div class="product-card">
-        <img src="Mix_soil.jpg" alt="Spices">
+        <img src="Mix_soil.jpg" alt="Soil">
         <h3>ACI Ready mix soil -10 kg</h3>
-        <p>500BDT</p>
-        <button>BUY NOW</button>
+        <p>500.00 BDT</p>
+        <button onclick="buyNow('ACI Ready mix soil -10 kg', 500)">BUY NOW</button>
       </div>
       <div class="product-card">
         <img src="drone.jpg" alt="Drone">
         <h3>Agri Drone/Water Spray</h3>
-        <p>25000BDT</p>
-        <button>BUY NOW</button>
+        <p>25000.00 BDT</p>
+        <button onclick="buyNow('Agri Drone', 25000)">BUY NOW</button>
       </div>
       <div class="product-card">
-        <img src="Masagar_seed.jpg" alt="Drone">
-        <h3>ম্যাগসার/ ইপশম সল্ট ( epsom salt) ১ কেজির প্যাকেট ৮০ টাকা</h3>
-        <p>80BDT/kg</p>
-        <button>BUY NOW</button>
+        <img src="Masagar_seed.jpg" alt="Epsom Salt">
+        <h3>ম্যাগসার / ইপশম সল্ট</h3>
+        <p>80.00 BDT</p>
+        <button onclick="buyNow('Epsom Salt', 80)">BUY NOW</button>
       </div>
       <div class="product-card">
-        <img src="BeetRoot.png" alt="Drone">
-        <h3>Organic beetroot Powder 100 Gm Premium Quality ( বিটরুট পাউডার)</h3>
-        <p>250BDT/100gm</p>
-        <button>BUY NOW</button>
+        <img src="BeetRoot.png" alt="Beetroot">
+        <h3>Organic beetroot Powder 100gm</h3>
+        <p>250.00 BDT</p>
+        <button onclick="buyNow('Beetroot Powder', 250)">BUY NOW</button>
       </div>
       <div class="product-card">
-        <img src="Chihinga_seed.jpg" alt="Drone">
-        <h3>হাইব্রিড চিচিঙ্গা মধুমতি -১০ গ্রাম ইউনাইটেড সিডস</h3>
-        <p>350BDT</p>
-        <button>BUY NOW</button>
+        <img src="Chihinga_seed.jpg" alt="Chichinga">
+        <h3>হাইব্রিড চিচিঙ্গা মধুমতি</h3>
+        <p>350.00 BDT</p>
+        <button onclick="buyNow('Chichinga Seed', 350)">BUY NOW</button>
       </div>
       <div class="product-card">
-        <img src="Radish_seed.jpg" alt="Drone">
-        <h3>Japanese taskisun Radish Seeds</h3>
-        <p>50BDT</p>
-        <button>BUY NOW</button>
+        <img src="Radish_seed.jpg" alt="Radish">
+        <h3>Japanese Radish Seeds</h3>
+        <p>50.00 BDT</p>
+        <button onclick="buyNow('Radish Seeds', 50)">BUY NOW</button>
       </div>
     </div>
   </main>
-  
-  
+
+  <script>
+    function buyNow(productName, price) {
+      localStorage.setItem('productName', productName);
+      localStorage.setItem('productPrice', price);
+      // go to your absolute path
+      window.location.href = "http://127.0.0.1:5500/payment/payment.html";
+    }
+    function goToLogin() {
+      window.location.href = "http://127.0.0.1:5500/login_page/Login.html"; 
+    }
+    function goToContact() {
+      window.location.href = "http://127.0.0.1:5500/contact_us_page/contact.html"; 
+    }
+    
+  </script>
 
 </body>
 </html>
+
+

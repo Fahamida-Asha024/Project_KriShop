@@ -10,9 +10,14 @@
     <div class="msg_box">
         <h2>You've already reponded</h2>
         <p>your response has been recorded</p>
-        <a href="">edit response</a><br>
+        <a href="http://127.0.0.1:5500/contact_us_page/contact.html">edit response</a><br>
         <br>
-        <button>back to home</button>
+        <button onclick="goToHome()" style="cursor: pointer;">back to home</button>
     </div>
+    <script>
+        function goToHome() {
+          window.location.href = "http://127.0.0.1:5500/Home_page/KriShop.html"; 
+        }
+      </script>
 </body>
 </html>

@@ -33,10 +33,14 @@
         <label for="enquiry">Enter Your Enquiry/আপনার সমস্যা লিখুন</label>
         <textarea id="enquiry" placeholder="Write your message here..." required></textarea>
       
-        <button type="submit">Submit</button>
+        <button onclick="goToAfterSubmit()" style="cursor: pointer;" type="submit">Submit</button>
       </div>
       
   </div>
-
+  <script>
+    function goToAfterSubmit() {
+      window.location.href = "http://127.0.0.1:5500/After_submission_page/submit.html"; 
+    }
+  </script>
 </body>
 </html>

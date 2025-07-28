@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <div class="payment-container">
+    <h2>Payment Summary</h2>
+    <p><strong>Product:</strong> <span id="productName"></span></p>
+    <p><strong>Product Price:</strong> <span id="productPrice"></span> BDT</p>
+    <p><strong>Delivery Charge:</strong> <span id="deliveryCharge">100</span> BDT</p>
+    <p><strong>Total:</strong> <span id="total"></span> BDT</p>
+    <button  onclick="goToProceed()" style="cursor: pointer;">Proceed to Pay</button>
+  </div>
+  <script src="payment.js"></script>
+<script>
+  function goToProceed() {
+    window.location.href = "http://127.0.0.1:5500/Proceed_TO_Pay/proceed.html"; 
+  }
+</script>
+
+  
+</body>
+</html>
