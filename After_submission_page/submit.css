@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+  }
+
+  .msg_box {
+    max-width: 700px;
+    margin: 60px auto;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .msg_box h2{
+    color:blueviolet;
+  }
+  .msg_box button{
+    height: 30px;
+    width: 100px;
+    color:#2d6a4f;
+  }
+
