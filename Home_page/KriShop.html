@@ -6,6 +6,7 @@
   <title>KriShop</title>
   <link rel="stylesheet" href="KriShop.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  
 </head>
 <body>
 
@@ -89,12 +90,26 @@
       </div>
     </div>
   </main>
-
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 KriShop. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="http://127.0.0.1:5500/about_us_page/about.html">About Us</a>
+        <a href="http://127.0.0.1:5500/terms_page/terms.html">Terms & Conditions</a>
+        <a href="http://127.0.0.1:5500/privacy_page/privacy.html">Privacy Policy</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  
   <script>
     function buyNow(productName, price) {
       localStorage.setItem('productName', productName);
       localStorage.setItem('productPrice', price);
-      // go to your absolute path
       window.location.href = "http://127.0.0.1:5500/payment/payment.html";
     }
     function goToLogin() {

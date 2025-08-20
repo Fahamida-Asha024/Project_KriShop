@@ -12,6 +12,6 @@ function submitAddress() {
     alert("Please enter your delivery address.");
   } else {
     localStorage.setItem('deliveryAddress', address);
-    alert("✅ Address submitted successfully. Your order will arrive soon!");
+    alert(" Address submitted successfully. Your order will arrive soon!");
   }
 }

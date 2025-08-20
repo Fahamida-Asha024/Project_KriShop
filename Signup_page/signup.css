@@ -1,84 +1,197 @@
+/* Global styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
   
-  body {
-    height: 100vh;
-    background: linear-gradient(to right, #ffe0b2, #ffcc80);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .signup-container {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-  }
-  
-  .signup-box {
-    background-color: white;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .signup-box h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    color: #fb8c00;
-  }
-  
-  .signup-box i {
-    color: #fb8c00;
-    margin-right: 8px;
-  }
-  
-  label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    width: 100%;
-    background-color: #fb8c00;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #e65100;
-  }
-  
-  .login-text {
-    text-align: center;
-    margin-top: 15px;
-  }
-  
-  .login-text a {
-    color: #fb8c00;
-    text-decoration: none;
-  }
-  
-  .login-text a:hover {
-    text-decoration: underline;
-  }
-  
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+.top-bar .logo h1{
+  color: #1b5e20;
+}
+/* Header */
+header {
+  height: 100px;
+  background-color:#fff;/* Optional: Background color for the header */
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ccc;
+  /* height: 75px; Keep the height of the top bar */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo h1 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.logo span {
+  color: #000;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 16px;  /* Adjusted padding to make the bar shorter */
+  width: 400px;
+  background-color: #fff;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  padding: 5px 10px; /* Reduced padding to make the input box shorter */
+}
+
+
+.search-bar i {
+  color: #333;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+.nav-icons div:hover {
+  transform: scale(1.08);
+}
+
+.nav-icons i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #eee;
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.banner-item {
+  max-width: 30%;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.banner-item small {
+  font-weight: normal;
+  color: #000;
+}
+
+/* Sign Up page specific styles */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.signup-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.signup-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ff914d;
+}
+
+.signup-box i {
+  color: #ff914d;
+  margin-right: 8px;
+}
+main{
+  color: #ff914d;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px; /* Make the address box larger */
+  resize: none;
+}
+
+button {
+  width: 100%;
+  background-color: #ff914d;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.login-text {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-text a {
+  color:#ff914d;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
