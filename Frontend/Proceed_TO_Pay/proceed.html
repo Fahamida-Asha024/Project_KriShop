@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceed to Pay</title>
+    <link rel="stylesheet" href="proceed.css">
+</head>
+
+<body>
+    <div class="success-box">
+
+        <h2>Thank you for your purchase.</h2>
+        <p><strong>Product:</strong> <span id="productName"></span></p>
+        <p><strong>Total Paid:</strong> <span id="totalPrice"></span> BDT</p>
+
+        <div class="delivery-info">
+            <p><strong>Delivery Address:</strong></p>
+            <input type="text" id="addressInput" placeholder="Enter your full address here" />
+            <div class="submit-container">
+                <button class="submit" onclick="submitAddress()">Submit</button>
+            </div>
+            <p class="cod-note">This is a Cash on Delivery (COD) order. Please keep exact change ready at the time of delivery.</p>
+        </div>
+
+        <a href="http://127.0.0.1:5500/Frontend/Home_page/KriShop.html">Back to Home</a>
+    </div>
+
+    <script src="proceed.js"></script>
+</body>
+
+</html>

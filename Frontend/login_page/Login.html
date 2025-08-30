@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - KriShop</title>
+    <link rel="stylesheet" href="Login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="logo.png" alt="KriShop Logo" />
+                <h1>Kri<span>Shop</span></h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products" />
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="nav-icons">
+                <div onclick="goToSignUP()" style="cursor: pointer;">
+                    <i class="fas fa-user"></i><span>Sign Up</span>
+                </div>
+                <div onclick="goToContact()" style="cursor: pointer;">
+                    <i class="fas fa-headset"></i><span>Contact</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="banner-item">নিরাপদ পেমেন্ট <br><small>বিভিন্ন পেমেন্ট পদ্ধতি থেকে বেছে নিন</small></div>
+            <div class="banner-item">ফ্রি ডেলিভারি <br><small>৩-৫ দিনের মধ্যে আপনার পণ্য পৌঁছে যাবে</small></div>
+            <div class="banner-item">১০০% ন্যাচারাল <br><small>প্রাকৃতিক উৎপাদন ব্যবস্থার প্রচারে আমরা প্রতিশ্রুতিবদ্ধ</small></div>
+        </div>
+    </header>
+    <main>
+        <div class="login-container">
+            <div class="login-box">
+                <h2><i class="fas fa-user-circle"></i> Login to KriShop</h2>
+                <form action="#" method="post">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+
+                    <button type="submit">Login</button>
+                    <p class="signup-text">Don't have an account? <a href="http://127.0.0.1:5500/Frontend/Signup_page/signup.html">Sign up</a></p>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        function goToSignUP() {
+            window.location.href = "http://127.0.0.1:5500/Frontend/Signup_page/signup.html";
+        }
+
+        function goToContact() {
+            window.location.href = "http://127.0.0.1:5500/contact_us_page/contact.html";
+        }
+    </script>
+</body>
+
+</html>
