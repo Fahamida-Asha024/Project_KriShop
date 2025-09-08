@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="bn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="refund.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
+
 <body>
     <header>
         <div class="top-bar">
@@ -19,14 +21,18 @@
                 <i class="fas fa-search"></i>
             </div>
             <div class="nav-icons">
+                <div onclick="goToHome()" style="cursor: pointer;">
+                    <i class="fas fa-home"></i><span>Home</span>
+                </div>
+
+                <div onclick="goToProfile()" style="cursor: pointer;">
+                    <i class="fas fa-id-card"></i><span>Profile</span>
+                </div>
                 <div onclick="goToLogin()" style="cursor: pointer;">
                     <i class="fas fa-user"></i><span>Login</span>
                 </div>
                 <div onclick="goToContact()" style="cursor: pointer;">
                     <i class="fas fa-headset"></i><span>Contact</span>
-                </div>
-                <div onclick="viewCart()" style="cursor: pointer;">
-                    <i class="fas fa-shopping-cart"></i><span>Cart</span>
                 </div>
             </div>
         </div>
@@ -50,10 +56,10 @@
     <footer>
         <div class="suppot">
             <h3>গ্রাহক সাপোর্ট</h3>
-            <p><a href="contact.html">যোগাযোগ করুন</a></p>
-            <p><a href="shipping.html">শিপিং এবং ডেলিভারি নীতি</a></p>
-            <p><a href="refund.html">রিফান্ড এবং রিটার্ন নীতি</a></p>
-            <p><a href="terms.html">শর্তাবলী</a></p>
+            <p><a href="#" onclick="goToContact()">যোগাযোগ করুন</a></p>
+            <p><a href="#" onclick="goToShipping()">শিপিং এবং ডেলিভারি নীতি</a></p>
+            <p><a href="#" onclick="goToRefund()">রিফান্ড এবং রিটার্ন নীতি</a></p>
+            <p><a href="#" onclick="goToTerms()">শর্তাবলী</a></p>
         </div>
         <div class="contact">
             <h3>যোগাযোগ</h3>
@@ -67,15 +73,40 @@
             <p><a href="#" onclick="goToSignUP()">সাইন আপ</a></p>
         </div>
     </footer>
-    <div id="cart" class="cart-section" style="display: none;">
-        <h2>Your Cart</h2>
-        <div id="cart-items">
-            <p>No items in the cart.</p>
-        </div>
-        <button onclick="checkout()">Checkout</button>
-        <button onclick="closeCart()">Close</button>
-    </div>
 
-    <script src="Krishop.js"></script>
+    <script>
+        function goToLogin() {
+            window.location.href = "../login_page/login.html";
+        }
+
+        function goToContact() {
+            window.location.href = "../Contact_us_page/contact.html";
+        }
+
+        function goToSignUP() {
+            window.location.href = "../Signup_page/signup.html";
+        }
+
+        function goToProfile() {
+            window.location.href = "../Profile_page/profile.html";
+        }
+
+        function goToShipping() {
+            window.location.href = "../Shipping_Policy_Page/policy.html";
+        }
+
+        function goToRefund() {
+            window.location.href = "../Refund_Policy_Page/refund.html";
+        }
+
+        function goToTerms() {
+            window.location.href = "../Terms_Page/terms.html"
+        }
+
+        function goToHome() {
+            window.location.href = "../Home_page/KriShop.html";
+        }
+    </script>
 </body>
+
 </html>

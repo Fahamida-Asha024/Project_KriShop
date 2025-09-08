@@ -48,5 +48,8 @@ function goToTerms() {
     window.location.href = "../Terms_Page/terms.html"
 }
 
+function goToHome() {
+    window.location.href = "../Home_page/KriShop.html";
+}
 
 loadProfile();

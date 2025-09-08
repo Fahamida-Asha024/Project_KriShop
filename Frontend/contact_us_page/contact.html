@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<header>
+    <header>
         <div class="top-bar">
             <div class="logo">
                 <img src="logo.png" alt="KriShop Logo" />
@@ -21,14 +21,18 @@
                 <i class="fas fa-search"></i>
             </div>
             <div class="nav-icons">
+                <div onclick="goToHome()" style="cursor: pointer;">
+                    <i class="fas fa-home"></i><span>Home</span>
+                </div>
+
+                <div onclick="goToProfile()" style="cursor: pointer;">
+                    <i class="fas fa-id-card"></i><span>Profile</span>
+                </div>
                 <div onclick="goToLogin()" style="cursor: pointer;">
                     <i class="fas fa-user"></i><span>Login</span>
                 </div>
                 <div onclick="goToContact()" style="cursor: pointer;">
                     <i class="fas fa-headset"></i><span>Contact</span>
-                </div>
-                <div onclick="viewCart()" style="cursor: pointer;">
-                    <i class="fas fa-shopping-cart"></i><span>Cart</span>
                 </div>
             </div>
         </div>
@@ -53,13 +57,13 @@
             <p><a href="mailto:raisa2202500@gmail.com">raisa2202500@gmail.com</a></p>
         </div>
     </div>
-           <footer>
+    <footer>
         <div class="suppot">
             <h3>গ্রাহক সাপোর্ট</h3>
             <p><a href="#" onclick="goToContact()">যোগাযোগ করুন</a></p>
-            <p><a href="#">শিপিং এবং ডেলিভারি নীতি</a></p>
-            <p><a href="#">রিফান্ড এবং রিটার্ন নীতি</a></p>
-            <p><a href="#">শর্তাবলী</a></p>
+            <p><a href="#" onclick="goToShipping()">শিপিং এবং ডেলিভারি নীতি</a></p>
+            <p><a href="#" onclick="goToRefund()">রিফান্ড এবং রিটার্ন নীতি</a></p>
+            <p><a href="#" onclick="goToTerms()">শর্তাবলী</a></p>
         </div>
         <div class="contact">
             <h3>যোগাযোগ</h3>
@@ -73,6 +77,39 @@
             <p><a href="#" onclick="goToSignUP()">সাইন আপ</a></p>
         </div>
     </footer>
+    <script>
+        function goToLogin() {
+            window.location.href = "../login_page/login.html";
+        }
+
+        function goToContact() {
+            window.location.href = "../Contact_us_page/contact.html";
+        }
+
+        function goToSignUP() {
+            window.location.href = "../Signup_page/signup.html";
+        }
+
+        function goToProfile() {
+            window.location.href = "../Profile_page/profile.html";
+        }
+
+        function goToShipping() {
+            window.location.href = "../Shipping_Policy_Page/policy.html";
+        }
+
+        function goToRefund() {
+            window.location.href = "../Refund_Policy_Page/refund.html";
+        }
+
+        function goToTerms() {
+            window.location.href = "../Terms_Page/terms.html"
+        }
+
+        function goToHome() {
+            window.location.href = "../Home_page/KriShop.html";
+        }
+    </script>
 </body>
 
 </html>
