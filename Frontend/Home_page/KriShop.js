@@ -113,3 +113,7 @@ function goToContact() {
 function goToSignUP() {
     window.location.href = "../Signup_page/signup.html";
 }
+
+function goToProfile() {
+    window.location.href = "../Profile_page/profile.html";
+}
