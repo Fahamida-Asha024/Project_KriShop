@@ -117,3 +117,15 @@ function goToSignUP() {
 function goToProfile() {
     window.location.href = "../Profile_page/profile.html";
 }
+
+function goToShipping() {
+    window.location.href = "../Shipping_Policy_Page/policy.html";
+}
+
+function goToRefund() {
+    window.location.href = "../Refund_Policy_Page/refund.html";
+}
+
+function goToTerms() {
+    window.location.href = "../Terms_Page/terms.html"
+}

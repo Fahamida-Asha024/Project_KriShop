@@ -20,4 +20,33 @@ function goToHome() {
     window.location.href = "../Home_page/KriShop.html";
 }
 
+function goToLogin() {
+    window.location.href = "../login_page/login.html";
+}
+
+function goToContact() {
+    window.location.href = "../Contact_us_page/contact.html";
+}
+
+function goToSignUP() {
+    window.location.href = "../Signup_page/signup.html";
+}
+
+function goToProfile() {
+    window.location.href = "../Profile_page/profile.html";
+}
+
+function goToShipping() {
+    window.location.href = "../Shipping_Policy_Page/policy.html";
+}
+
+function goToRefund() {
+    window.location.href = "../Refund_Policy_Page/refund.html";
+}
+
+function goToTerms() {
+    window.location.href = "../Terms_Page/terms.html"
+}
+
+
 loadProfile();
