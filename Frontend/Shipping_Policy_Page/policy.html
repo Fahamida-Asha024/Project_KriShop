@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>শিপিং এবং ডেলিভারি নীতি - KriShop</title>
+    <link rel="stylesheet" href="shipping.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="logo.png" alt="KriShop Logo" />
+                <h1>Kri<span>Shop</span></h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products" />
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="nav-icons">
+                <div onclick="goToLogin()" style="cursor: pointer;">
+                    <i class="fas fa-user"></i><span>Login</span>
+                </div>
+                <div onclick="goToContact()" style="cursor: pointer;">
+                    <i class="fas fa-headset"></i><span>Contact</span>
+                </div>
+                <div onclick="viewCart()" style="cursor: pointer;">
+                    <i class="fas fa-shopping-cart"></i><span>Cart</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="banner-item">নিরাপদ পেমেন্ট <br><small>বিভিন্ন পেমেন্ট পদ্ধতি থেকে বেছে নিন</small></div>
+            <div class="banner-item">ফ্রি ডেলিভারি <br><small>৩-৫ দিনের মধ্যে আপনার পণ্য পৌঁছে যাবে</small></div>
+            <div class="banner-item">১০০% ন্যাচারাল <br><small>প্রাকৃতিক উৎপাদন ব্যবস্থার প্রচারে আমরা প্রতিশ্রুতিবদ্ধ</small></div>
+        </div>
+    </header>
+    <main class="policy-container">
+        <h2>শিপিং এবং ডেলিভারি নীতি</h2>
+        <p>✅ আমরা বাংলাদেশের যেকোনো স্থানে ডেলিভারি প্রদান করি।</p>
+        <p>✅ সাধারণত ৩-৫ কার্যদিবসের মধ্যে আপনার অর্ডার পৌঁছে যাবে।</p>
+        <p>✅ ঢাকার মধ্যে ডেলিভারি চার্জ কম এবং দ্রুততর সার্ভিস প্রদান করা হয়।</p>
+        <p>✅ কুরিয়ার সার্ভিসের মাধ্যমে আপনার অর্ডার পৌঁছে দেওয়া হবে।</p>
+    </main>
+    <footer>
+        <div class="suppot">
+            <h3>গ্রাহক সাপোর্ট</h3>
+            <p><a href="#" onclick="goToContact()">যোগাযোগ করুন</a></p>
+            <p><a href="#">শিপিং এবং ডেলিভারি নীতি</a></p>
+            <p><a href="#">রিফান্ড এবং রিটার্ন নীতি</a></p>
+            <p><a href="#">শর্তাবলী</a></p>
+        </div>
+        <div class="contact">
+            <h3>যোগাযোগ</h3>
+            <p>হটলাইন: <br>01885222985</p>
+            <p>ইমেইল</p>
+            <a href="humairamumtahinmahi@gmail.com">support@krishop.com.bd</a>
+        </div>
+        <div class="MyAccount">
+            <h3>আমার একাউন্ট</h3>
+            <p><a href="#" onclick="goToLogin()">লগইন</a></p>
+            <p><a href="#" onclick="goToSignUP()">সাইন আপ</a></p>
+        </div>
+    </footer>
+    <div id="cart" class="cart-section" style="display: none;">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <p>No items in the cart.</p>
+        </div>
+        <button onclick="checkout()">Checkout</button>
+        <button onclick="closeCart()">Close</button>
+    </div>
+
+    <script src="Krishop.js"></script>
+</body>
+</html>
