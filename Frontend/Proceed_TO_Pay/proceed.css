@@ -1,79 +1,76 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e0ffe0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .success-box {
-    background: white;
-    padding: 30px 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.success-box {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  .success-box h2 {
-    color: green;
-    margin-bottom: 10px;
-  }
-  
-  .delivery-info {
+}
+
+.success-box h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.success-box p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.delivery-info {
     margin-top: 20px;
-  }
-  
-  #addressInput {
+    text-align: left;
+}
+
+.delivery-info input {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
-    margin-top: 8px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  .submit-container {
-    margin-top: 15px;
-  }
-  
-  .submit {
+    font-size: 14px;
+}
+
+.submit-container {
+    text-align: center;
+}
+
+.submit {
     padding: 10px 20px;
     background-color: #2e7d32;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
-  }
-  
-  .submit:hover {
-    background-color: #1c5d25;
-  }
-  
-  .cod-note {
+    font-size: 16px;
+}
+
+.submit:hover {
+    background-color: #1b5e20;
+}
+
+.cod-note {
     font-size: 14px;
     color: #555;
     margin-top: 10px;
-    background-color: #fef8e7;
-    padding: 10px;
-    border-left: 4px solid #ffc107;
-    border-radius: 5px;
-  }
-  
-  .success-box a {
+}
+
+a {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #2e7d32;
-    color: white;
+    color: #2e7d32;
     text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .success-box a:hover {
-    background-color: #218838;
-  }
-  
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

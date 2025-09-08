@@ -1,43 +1,54 @@
-
-  
-  body {
+body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    padding: 40px;
-  }
-  
-  .payment-container {
-    background: white;
-    max-width: 400px;
-    margin: auto;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .payment-container h2 {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.payment-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h2 {
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .payment-container p {
-    font-size: 18px;
+    color: #2e7d32;
+}
+
+.payment-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.payment-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.payment-container p {
+    font-size: 16px;
     margin: 10px 0;
-  }
-  
-  button {
+}
+
+button {
+    display: block;
     width: 100%;
     padding: 10px;
     background-color: #2e7d32;
     color: white;
     border: none;
-    font-size: 16px;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
-  }
-  
-  button:hover {
-    background-color: #218838;
-  }
-  
+}
+
+button:hover {
+    background-color: #1b5e20;
+}

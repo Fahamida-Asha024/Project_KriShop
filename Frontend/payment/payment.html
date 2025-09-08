@@ -11,20 +11,14 @@
 <body>
     <div class="payment-container">
         <h2>Payment Summary</h2>
-        <p><strong>Product:</strong> <span id="productName"></span></p>
-        <p><strong>Product Price:</strong> <span id="productPrice"></span> BDT</p>
+        <div id="payment-items">
+            <!-- Items will be dynamically added here -->
+        </div>
         <p><strong>Delivery Charge:</strong> <span id="deliveryCharge">100</span> BDT</p>
-        <p><strong>Total:</strong> <span id="total"></span> BDT</p>
-        <button onclick="goToProceed()" style="cursor: pointer;">Proceed to Pay</button>
+        <p><strong>Total Amount:</strong> <span id="totalAmount"></span> BDT</p>
+        <button onclick="proceedToPay()">Proceed to Pay</button>
     </div>
     <script src="payment.js"></script>
-    <script>
-        function goToProceed() {
-            window.location.href = "http://127.0.0.1:5500/Frontend/Proceed_TO_Pay/proceed.html";
-        }
-    </script>
-
-
 </body>
 
 </html>

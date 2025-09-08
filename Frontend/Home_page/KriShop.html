@@ -29,6 +29,9 @@
                 <div onclick="goToContact()" style="cursor: pointer;">
                     <i class="fas fa-headset"></i><span>Contact</span>
                 </div>
+                <div onclick="viewCart()" style="cursor: pointer;">
+                    <i class="fas fa-shopping-cart"></i><span>Cart</span>
+                </div>
             </div>
         </div>
 
@@ -44,85 +47,94 @@
         <div class="product-grid">
             <div class="product-card">
                 <img src="fertilizer.jpg" alt="Fertilizer">
-                <h3>Nitrogenous Fertilizers/<br>নাইট্রোজেন সার</h3>
+                <h3>Nitrogenous Fertilizers(1 kg)/<br>নাইট্রোজেন সার(১ কেজি)</h3>
                 <p>450.00 BDT</p>
+                <button onclick="addToCart('Nitrogenous Fertilizers', 450)">Add to Cart</button>
                 <button onclick="buyNow('Nitrogenous Fertilizers', 450)">BUY NOW</button>
             </div>
+
             <div class="product-card">
                 <img src="paddy.jpg" alt="Paddy">
-                <h3>Aman (BRRI 44)/<br>আমন (ব্রি ধান৪৪)</h3>
+                <h3>Aman(BRRI 44) seeds (1 kg)/<br>আমন(ব্রি ধান৪৪)বীজ(১ কেজি)</h3>
                 <p>1300.00 BDT</p>
+                <button onclick="addToCart('Aman (BRRI 44)', 1300)">Add to Cart</button>
                 <button onclick="buyNow('Aman (BRRI 44)', 1300)">BUY NOW</button>
             </div>
             <div class="product-card">
                 <img src="Mix_soil.jpg" alt="Soil">
-                <h3>ACI Ready mix soil -10 kg</h3>
-                <p>500.00 BDT</p>
-                <button onclick="buyNow('ACI Ready mix soil -10 kg', 500)">BUY NOW</button>
+                <h3>ACI Ready mix soil -1 kg/<br>এসিআই-রেডি মিশ্রিত মাটি (১ কেজি)</h3>
+                <p>50.00 BDT</p>
+                <button onclick="addToCart('ACI Ready mix soil -1 kg', 50)">Add to Cart</button>
+                <button onclick="buyNow('ACI Ready mix soil -1 kg', 50)">BUY NOW</button>
             </div>
             <div class="product-card">
                 <img src="drone.jpg" alt="Drone">
-                <h3>Agri Drone/Water Spray</h3>
+                <h3>Agri Drone/Water Spray (1 pc)/<br>কৃষি ড্রোন / পানি চিটানোর যন্ত্র (১ টি)</h3>
                 <p>25000.00 BDT</p>
+                <button onclick="addToCart('Agri Drone', 25000)">Add to Cart</button>
                 <button onclick="buyNow('Agri Drone', 25000)">BUY NOW</button>
             </div>
             <div class="product-card">
+
                 <img src="Masagar_seed.jpg" alt="Epsom Salt">
-                <h3>ম্যাগসার / ইপশম সল্ট</h3>
+                <h3>Masagar/Epsom Salt(1 pkt)/<br>ম্যাগসার / ইপশম সল্ট (১ প্যাকেট)</h3>
                 <p>80.00 BDT</p>
+                <button onclick="addToCart('Epsom Salt', 80)">Add to Cart</button>
                 <button onclick="buyNow('Epsom Salt', 80)">BUY NOW</button>
             </div>
             <div class="product-card">
                 <img src="BeetRoot.png" alt="Beetroot">
-                <h3>Organic beetroot Powder 100gm</h3>
+                <h3>Organic beetroot Powder 100gm<br>জৈব বিটরুট পাউডার (১০০ গ্রাম)</h3>
                 <p>250.00 BDT</p>
+                <button onclick="addToCart('Beetroot Powder', 250)">Add to Cart</button>
                 <button onclick="buyNow('Beetroot Powder', 250)">BUY NOW</button>
             </div>
             <div class="product-card">
                 <img src="Chihinga_seed.jpg" alt="Chichinga">
-                <h3>হাইব্রিড চিচিঙ্গা মধুমতি</h3>
+                <h3>Chichinga Seed(1 kg)/<br>হাইব্রিড চিচিঙ্গা মধুমতি বীজ(১ কেজি)</h3>
                 <p>350.00 BDT</p>
+                <button onclick="addToCart('Chichinga Seed', 350)">Add to Cart</button>
                 <button onclick="buyNow('Chichinga Seed', 350)">BUY NOW</button>
             </div>
             <div class="product-card">
                 <img src="Radish_seed.jpg" alt="Radish">
-                <h3>Japanese Radish Seeds</h3>
+                <h3>Japanese Radish Seeds(1 kg)/<br>জাপানিস মুলার বীজ(১ কেজি)</h3>
                 <p>50.00 BDT</p>
+                <button onclick="addToCart('Radish Seeds', 50)">Add to Cart</button>
                 <button onclick="buyNow('Radish Seeds', 50)">BUY NOW</button>
             </div>
         </div>
     </main>
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 KriShop. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="http://127.0.0.1:5500/about_us_page/about.html">About Us</a>
-                <a href="http://127.0.0.1:5500/terms_page/terms.html">Terms & Conditions</a>
-                <a href="http://127.0.0.1:5500/privacy_page/privacy.html">Privacy Policy</a>
-            </div>
-            <div class="social-media">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+        <div class="suppot">
+            <h3>গ্রাহক সাপোর্ট</h3>
+            <p><a href="#" onclick="goToContact()">যোগাযোগ করুন</a></p>
+            <p><a href="#">শিপিং এবং ডেলিভারি নীতি</a></p>
+            <p><a href="#">রিফান্ড এবং রিটার্ন নীতি</a></p>
+            <p><a href="#">শর্তাবলী</a></p>
+        </div>
+        <div class="contact">
+            <h3>যোগাযোগ</h3>
+            <p>হটলাইন: <br>01885222985</p>
+            <p>ইমেইল</p>
+            <a href="humairamumtahinmahi@gmail.com">support@krishop.com.bd</a>
+        </div>
+        <div class="MyAccount">
+            <h3>আমার একাউন্ট</h3>
+            <p><a href="#" onclick="goToLogin()">লগইন</a></p>
+            <p><a href="#" onclick="goToSignUP()">সাইন আপ</a></p>
         </div>
     </footer>
+    <div id="cart" class="cart-section" style="display: none;">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <p>No items in the cart.</p>
+        </div>
+        <button onclick="checkout()">Checkout</button>
+        <button onclick="closeCart()">Close</button>
+    </div>
 
-    <script>
-        function buyNow(productName, price) {
-            localStorage.setItem('productName', productName);
-            localStorage.setItem('productPrice', price);
-            window.location.href = "http://127.0.0.1:5500/Frontend/payment/payment.html";
-        }
-
-        function goToLogin() {
-            window.location.href = "http://127.0.0.1:5500/Frontend/login_page/Login.html";
-        }
-
-        function goToContact() {
-            window.location.href = "http://127.0.0.1:5500/Frontend/contact_us_page/contact.html";
-        }
-    </script>
+    <script src="KriShop.js"></script>
 
 </body>
 
